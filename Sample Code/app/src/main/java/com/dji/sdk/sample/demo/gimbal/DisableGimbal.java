@@ -48,16 +48,14 @@ public class DisableGimbal extends LinearLayout implements View.OnClickListener,
     }
 
     private void checkMovementSettingsSupport(){
-        for(int i = 0; i<2;i++){
-            if (getGimbal(i) != null) {
-                Gimbal gimbal = getGimbal(i);
-                DJIParamCapability capability = null;
-                if (gimbal.getCapabilities() != null) {
-                    capability = gimbal.getCapabilities().get(CapabilityKey.MOVEMENT_SETTINGS);
-                }
-                if (capability != null) {
-                    ToastUtils.setResultToToast("Gimbal "+i+" MOVEMENT_SETTINGS supported: " + capability.isSupported());
-                }
+        getGimbal(0);
+        for(Gimbal gimbal : gimbals){
+            DJIParamCapability capability = null;
+            if (gimbal.getCapabilities() != null) {
+                capability = gimbal.getCapabilities().get(CapabilityKey.MOVEMENT_SETTINGS);
+            }
+            if (capability != null) {
+                ToastUtils.setResultToToast("Gimbal "+ gimbal.toString() +" MOVEMENT_SETTINGS supported: " + capability.isSupported());
             }
         }
     }
@@ -101,6 +99,7 @@ public class DisableGimbal extends LinearLayout implements View.OnClickListener,
             return null;
         }
     }
+
 
 
     private void initUI(Context context) {
