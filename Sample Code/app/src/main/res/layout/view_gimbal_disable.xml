@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+>
+    <ScrollView
+        android:id="@+id/vidoe_feeder_btns"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/vidoe_feeder_btns"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <!-- FREE -->
+            <TextView
+                android:id="@+id/mode_free"
+                style="@style/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_mode_free"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_free_1"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_left"/>
+
+                <Button
+                    android:id="@+id/btn_free_2"
+                    android:layout_marginLeft="10dp"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_right"/>
+            </LinearLayout>
+            <!-- FPV -->
+            <TextView
+                android:id="@+id/mode_fpv"
+                style="@style/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_mode_fpv"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_fpv_1"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_left"/>
+
+                <Button
+                    android:id="@+id/btn_fpv_2"
+                    android:layout_marginLeft="10dp"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_right"/>
+            </LinearLayout>
+            <!-- YAW -->
+            <TextView
+                android:id="@+id/mode_yaw"
+                style="@style/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_mode_yaw"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_yaw_1"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_left"/>
+
+                <Button
+                    android:id="@+id/btn_yaw_2"
+                    android:layout_marginLeft="10dp"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_right"/>
+            </LinearLayout>
+            <!-- MOTOR -->
+            <TextView
+                android:id="@+id/motor_disable"
+                style="@style/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_motor_disabled"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_motor_1"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_left"/>
+
+                <Button
+                    android:id="@+id/btn_motor_2"
+                    android:layout_marginLeft="10dp"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_right"/>
+            </LinearLayout>
+            <!-- UNKNOWN -->
+            <TextView
+                android:id="@+id/unkown"
+                style="@style/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_mode_unkown"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_unknown_1"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_left"/>
+
+                <Button
+                    android:id="@+id/btn_unknown_2"
+                    android:layout_marginLeft="10dp"
+                    style="@style/common_button"
+                    android:text="@string/gimbal_right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:scrollbars="vertical">
+
+    </ScrollView>
+
+</merge>

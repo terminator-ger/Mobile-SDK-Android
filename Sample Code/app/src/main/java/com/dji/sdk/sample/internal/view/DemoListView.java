@@ -35,6 +35,7 @@ import com.dji.sdk.sample.demo.flightcontroller.VirtualStickView;
 import com.dji.sdk.sample.demo.gimbal.GimbalCapabilityView;
 import com.dji.sdk.sample.demo.gimbal.MoveGimbalWithSpeedView;
 import com.dji.sdk.sample.demo.gimbal.PushGimbalDataView;
+import com.dji.sdk.sample.demo.gimbal.DisableGimbal;
 import com.dji.sdk.sample.demo.key.KeyedInterfaceView;
 import com.dji.sdk.sample.demo.keymanager.KeyManagerView;
 import com.dji.sdk.sample.demo.missionoperator.WaypointMissionOperatorView;
@@ -135,7 +136,8 @@ public class DemoListView extends FrameLayout {
                          false,
                          new GroupItem(R.string.gimbal_listview_push_info, PushGimbalDataView.class),
                          new GroupItem(R.string.gimbal_listview_rotate_gimbal, MoveGimbalWithSpeedView.class),
-                         new GroupItem(R.string.gimbal_listview_gimbal_capability, GimbalCapabilityView.class));
+                         new GroupItem(R.string.gimbal_listview_gimbal_capability, GimbalCapabilityView.class),
+                         new GroupItem(R.string.gimbal_listview_disableGimbal, DisableGimbal.class));
 
         builder.addGroup(R.string.component_listview_battery,
                          false,

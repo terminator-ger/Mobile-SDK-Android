@@ -95,6 +95,8 @@
     <string name="gimbal_listview_push_info">Push Info</string>
     <string name="gimbal_listview_rotate_gimbal">Rotate With Speed</string>
     <string name="gimbal_listview_gimbal_capability">Gimbal Capability</string>
+    <string name="gimbal_listview_disableGimbal">Disable Gimbal</string>
+
 
     <!-- Battery list -->
     <string name="battery_subtitle">Battery Information</string>
@@ -244,6 +246,15 @@
     <string name="video_feeder_left_right">Left+Right</string>
     <string name="component_listview_video_feeder">Video Feeder View</string>
     <string name="component_xt2_camera_view">XT2 Camera View</string>
+    <!-- Gimbal setttings -->
+    <string name="gimbal_left">Gimbal I</string>
+    <string name="gimbal_right">Gimbal II</string>
+    <string name="set_mode_free">Set Gimbal Mode Free</string>
+    <string name="set_mode_fpv">Set Gimbal Mode FPV</string>
+    <string name="set_mode_yaw">Set Gimbal Mode YawFollow</string>
+    <string name="set_mode_unkown">Set Gimbal Mode Unkown</string>
+    <string name="set_motor_disabled">Set Gimbal Motor Disabled</string>
+    <string name="gimbal_remove">Modifies Gimbal operations modes</string>
 
     <!-- FlightHubManager testing Activity -->
     <string name="fh_get_authorization">Get Authorization</string>

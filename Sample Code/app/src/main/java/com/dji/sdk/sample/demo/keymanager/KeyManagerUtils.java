@@ -319,6 +319,7 @@ public class KeyManagerUtils {
         gimbalKeyList.add(GimbalKey.CALIBRATION_PROGRESS);
         gimbalKeyList.add(GimbalKey.CONTROLLER_MODE);
         gimbalKeyList.add(GimbalKey.BALANCE_STATE);
+        gimbalKeyList.add(GimbalKey.MOTOR_ENABLED);
         keyInterfaceMap.put(BaseProduct.ComponentKey.GIMBAL, gimbalKeyList);
 
         ArrayList<String> batteryKeyList = new ArrayList<>();
